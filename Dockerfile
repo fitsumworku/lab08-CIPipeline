@@ -10,4 +10,4 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 COPY --from=build /src/target/team-skeleton.jar app.jar
 USER appuser
 ENTRYPOINT ["java", "-jar", "app.jar"]
-
+#something
